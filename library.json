@@ -30,6 +30,12 @@
         "energia",
         "wiringpi"
       ]
+    },
+    {
+      "name": "BH1750FVI",
+      "version": "1.2.4",
+      "authors": "Enjoyneering",
+      "frameworks": "arduino"
     }
   ],
   "version": "0.0.1",
