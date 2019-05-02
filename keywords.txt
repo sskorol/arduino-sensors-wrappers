@@ -1,0 +1,42 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Button        KEYWORD1
+ContactSensor KEYWORD1
+Lamp          KEYWORD1
+LED           KEYWORD1
+MotionSensor  KEYWORD1
+RFReceiver    KEYWORD1
+Sensor        KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+# ContactSensor
+getState            KEYWORD2
+isUpdated           KEYWORD2
+
+# Lamp
+isTurnedOn          KEYWORD2
+turnOn              KEYWORD2
+turnOff             KEYWORD2
+setPowerState       KEYWORD2
+sendCode            KEYWORD2
+switchProtocol      KEYWORD2
+
+# LED
+changeState         KEYWORD2
+turnOn              KEYWORD2
+turnOff             KEYWORD2
+isTurnedOn          KEYWORD2
+
+# MotionSensor
+isMovementDetected  KEYWORD2
+
+# RFReceiver
+listen              KEYWORD2
+
+# Sensor
+getPin              KEYWORD2
