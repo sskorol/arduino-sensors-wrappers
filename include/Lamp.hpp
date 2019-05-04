@@ -1,11 +1,9 @@
 #ifndef LAMP_HPP
 #define LAMP_HPP
 
-#include <RCSwitch.h>
-#include "Sensor.hpp"
+#include "RFTransmitter.hpp"
 
-class Lamp : public Sensor {
-  RCSwitch transmitter;
+class Lamp : public RFTransmitter {
   bool _isTurnedOn;
 
  public:
@@ -14,8 +12,6 @@ class Lamp : public Sensor {
   void turnOn(unsigned long, unsigned int);
   void turnOff(unsigned long, unsigned int);
   void setPowerState(bool);
-  void sendCode(unsigned long, unsigned int);
-  void switchProtocol(int);
 };
 
 #endif

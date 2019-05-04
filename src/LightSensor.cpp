@@ -9,7 +9,7 @@ LightSensor::LightSensor(uint8_t sdaPin, uint8_t sclPin) {
   lightSensor = new BH1750FVI(BH1750_DEFAULT_I2CADDR, BH1750_CONTINUOUS_HIGH_RES_MODE_2, BH1750_SENSITIVITY_DEFAULT, BH1750_ACCURACY_DEFAULT);
 
   unsigned int elapsedTime = 0;
-  while (lightSensor->begin(sdaPin, sclPin) != true && elapsedTime < CONNECTION_TIMEOUT) {
+  while (!lightSensor->begin(sdaPin, sclPin) && elapsedTime < CONNECTION_TIMEOUT) {
     delay(CONNECTION_ATTEMPT_DELAY);
     elapsedTime += CONNECTION_ATTEMPT_DELAY;
     Serial.print(".");
