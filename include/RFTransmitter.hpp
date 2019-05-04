@@ -6,7 +6,6 @@
 
 class RFTransmitter : public Sensor {
   RCSwitch transmitter;
-  bool _isTurnedOn;
 
  public:
   RFTransmitter(uint8_t);

@@ -36,6 +36,18 @@
       "version": "1.2.4",
       "authors": "Enjoyneering",
       "frameworks": "arduino"
+    },
+    {
+      "name": "LiquidCrystal_I2C",
+      "version": "1.1.4",
+      "authors": "Frank de Brabander",
+      "frameworks": "arduino"
+    },
+    {
+      "name": "Wire",
+      "version": "1.0",
+      "authors": "Ivan Grokhotkov",
+      "frameworks": "arduino"
     }
   ],
   "version": "0.0.1",
