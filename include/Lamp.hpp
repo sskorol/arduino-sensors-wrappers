@@ -5,6 +5,7 @@
 
 class Lamp : public RFTransmitter {
   bool _isTurnedOn;
+  int brightnessLevel;
 
  public:
   Lamp(uint8_t);
@@ -12,6 +13,8 @@ class Lamp : public RFTransmitter {
   void turnOn(unsigned long, unsigned int);
   void turnOff(unsigned long, unsigned int);
   void setPowerState(bool);
+  int getBrightness();
+  void setBrightness(int, unsigned long, unsigned int);
 };
 
 #endif

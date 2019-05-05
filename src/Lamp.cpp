@@ -2,6 +2,7 @@
 
 Lamp::Lamp(uint8_t pin) : RFTransmitter(pin) {
   _isTurnedOn = false;
+  brightnessLevel = 100;
 }
 
 bool Lamp::isTurnedOn() {
@@ -20,4 +21,13 @@ void Lamp::turnOff(unsigned long code, unsigned int length) {
 
 void Lamp::setPowerState(bool isTurnedOn) {
   _isTurnedOn = isTurnedOn;
+}
+
+void Lamp::setBrightness(int level, unsigned long code, unsigned int length) {
+  RFTransmitter::sendCode(code, length);
+  brightnessLevel = level;
+}
+
+int Lamp::getBrightness() {
+  return brightnessLevel;
 }
