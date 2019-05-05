@@ -1,1 +1,6 @@
 .DS_Store
+.pioenvs
+.piolibdeps
+platformio.ini
+.vscode
+EntryPoint.*
