@@ -48,9 +48,20 @@
       "version": "1.0",
       "authors": "Ivan Grokhotkov",
       "frameworks": "arduino"
+    },
+    {
+      "name": "IRremoteESP8266",
+      "version": "2.6.0",
+      "authors": [
+        "Sebastien Warin",
+        "Mark Szabo",
+        "Ken Shirriff",
+        "David Conran"
+      ],
+      "frameworks": "arduino"
     }
   ],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "frameworks": "arduino",
   "platforms": "*"
 }
