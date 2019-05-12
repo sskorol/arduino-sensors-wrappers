@@ -9,6 +9,8 @@ class RFReceiver : public Sensor {
   public:
     RFReceiver(uint8_t);
     unsigned long listen();
+    void enable();
+    void disable();
 };
 
 #endif

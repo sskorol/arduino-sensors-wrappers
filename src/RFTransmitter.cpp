@@ -2,7 +2,7 @@
 
 RFTransmitter::RFTransmitter(uint8_t pin) : Sensor(pin) {
   transmitter = RCSwitch();
-  transmitter.enableTransmit(getPin());
+  enable();
 }
 
 void RFTransmitter::sendCode(unsigned long code, unsigned int length) {
@@ -11,4 +11,12 @@ void RFTransmitter::sendCode(unsigned long code, unsigned int length) {
 
 void RFTransmitter::switchProtocol(int number) {
   transmitter.setProtocol(number);
+}
+
+void RFTransmitter::enable() {
+  transmitter.enableTransmit(getPin());
+}
+
+void RFTransmitter::disable() {
+  transmitter.disableTransmit();
 }

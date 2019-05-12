@@ -62,10 +62,14 @@ isMovementDetected  KEYWORD2
 
 # RFReceiver
 listen              KEYWORD2
+enable              KEYWORD2
+disable             KEYWORD2
 
 # RFTransmitter
 sendCode            KEYWORD2
 switchProtocol      KEYWORD2
+enable              KEYWORD2
+disable             KEYWORD2
 
 # Sensor
 getPin              KEYWORD2

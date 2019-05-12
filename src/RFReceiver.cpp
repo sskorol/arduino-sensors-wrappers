@@ -2,7 +2,7 @@
 
 RFReceiver::RFReceiver(uint8_t pin) : Sensor(pin) {
   receiver = RCSwitch();
-  receiver.enableReceive(getPin());
+  enable();
 }
 
 unsigned long RFReceiver::listen() {
@@ -21,4 +21,12 @@ unsigned long RFReceiver::listen() {
   }
 
   return code;
+}
+
+void RFReceiver::disable() {
+  receiver.disableReceive();
+}
+
+void RFReceiver::enable() {
+  receiver.enableReceive(getPin());
 }

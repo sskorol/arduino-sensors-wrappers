@@ -11,6 +11,8 @@ class RFTransmitter : public Sensor {
   RFTransmitter(uint8_t);
   void sendCode(unsigned long, unsigned int);
   void switchProtocol(int);
+  void enable();
+  void disable();
 };
 
 #endif
