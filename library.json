@@ -51,7 +51,7 @@
     },
     {
       "name": "IRremoteESP8266",
-      "version": "2.6.0",
+      "version": "2.6.2",
       "authors": [
         "Sebastien Warin",
         "Mark Szabo",

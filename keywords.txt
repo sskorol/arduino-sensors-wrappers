@@ -2,19 +2,20 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-Button        KEYWORD1
-ContactSensor KEYWORD1
-IRDevice      KEYWORD1
-IRReceiver    KEYWORD1
-IRTransmitter KEYWORD1
-Lamp          KEYWORD1
-LCD           KEYWORD1
-LED           KEYWORD1
-LightSensor   KEYWORD1
-MotionSensor  KEYWORD1
-RFReceiver    KEYWORD1
-RFTransmitter KEYWORD1
-Sensor        KEYWORD1
+Button                KEYWORD1
+ContactSensor         KEYWORD1
+IRDevice              KEYWORD1
+IRReceiver            KEYWORD1
+IRTransmitter         KEYWORD1
+Lamp                  KEYWORD1
+LCD                   KEYWORD1
+LED                   KEYWORD1
+LightSensor           KEYWORD1
+MotionSensor          KEYWORD1
+RFReceiver            KEYWORD1
+RFTransmitter         KEYWORD1
+Sensor                KEYWORD1
+SamsungAirConditioner KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
@@ -73,3 +74,13 @@ disable             KEYWORD2
 
 # Sensor
 getPin              KEYWORD2
+
+# SamsungAirConditioner
+turnOn            KEYWORD2
+turnOff           KEYWORD2
+adjustTemperature KEYWORD2
+adjustFanSpeed    KEYWORD2
+adjustWorkMode    KEYWORD2
+adjustSwingMode   KEYWORD2
+sendCommands      KEYWORD2
+printState        KEYWORD2
