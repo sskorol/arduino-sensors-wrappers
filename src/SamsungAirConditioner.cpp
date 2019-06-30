@@ -17,6 +17,10 @@ SamsungAirConditioner* SamsungAirConditioner::turnOff() {
   return this;
 }
 
+bool SamsungAirConditioner::isTurnedOn() {
+  return ac->getPower();
+}
+
 SamsungAirConditioner* SamsungAirConditioner::adjustTemperature(uint8_t value) {
   return adjustTemperature(value, false);
 }
@@ -29,6 +33,10 @@ SamsungAirConditioner* SamsungAirConditioner::adjustTemperature(uint8_t value, b
   }
 
   return this;
+}
+
+uint8_t SamsungAirConditioner::getTemperature() {
+  return ac->getTemp();
 }
 
 SamsungAirConditioner* SamsungAirConditioner::adjustFanSpeed(uint8_t value) {
@@ -45,6 +53,10 @@ SamsungAirConditioner* SamsungAirConditioner::adjustFanSpeed(uint8_t value, bool
   return this;
 }
 
+uint8_t SamsungAirConditioner::getFanSpeed() {
+  return ac->getFan();
+}
+
 SamsungAirConditioner* SamsungAirConditioner::adjustWorkMode(uint8_t value) {
   return adjustWorkMode(value, false);
 }
@@ -59,6 +71,10 @@ SamsungAirConditioner* SamsungAirConditioner::adjustWorkMode(uint8_t value, bool
   return this;
 }
 
+uint8_t SamsungAirConditioner::getWorkMode() {
+  return ac->getMode();
+}
+
 SamsungAirConditioner* SamsungAirConditioner::adjustSwingMode(bool state) {
   return adjustSwingMode(state, false);
 }
@@ -71,6 +87,10 @@ SamsungAirConditioner* SamsungAirConditioner::adjustSwingMode(bool state, bool s
   }
 
   return this;
+}
+
+bool SamsungAirConditioner::isSwingModeOn() {
+  return ac->getSwing();
 }
 
 SamsungAirConditioner* SamsungAirConditioner::sendCommands() {

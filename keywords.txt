@@ -78,9 +78,14 @@ getPin              KEYWORD2
 # SamsungAirConditioner
 turnOn            KEYWORD2
 turnOff           KEYWORD2
+isTurnedOn        KEYWORD2
 adjustTemperature KEYWORD2
+getTemperature    KEYWORD2
 adjustFanSpeed    KEYWORD2
+getFanSpeed       KEYWORD2
 adjustWorkMode    KEYWORD2
+getWorkMode       KEYWORD2
 adjustSwingMode   KEYWORD2
+isSwingModeOn     KEYWORD2
 sendCommands      KEYWORD2
 printState        KEYWORD2
