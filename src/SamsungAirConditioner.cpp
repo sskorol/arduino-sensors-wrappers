@@ -1,7 +1,7 @@
 #include "SamsungAirConditioner.hpp"
 
-SamsungAirConditioner::SamsungAirConditioner(uint8_t pin) {
-  ac = new IRSamsungAc(pin);
+SamsungAirConditioner::SamsungAirConditioner(uint8_t pin, bool inverted) {
+  ac = new IRSamsungAc(pin, inverted);
   ac->begin();
 }
 

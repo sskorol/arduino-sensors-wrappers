@@ -4,3 +4,4 @@
 platformio.ini
 .vscode
 EntryPoint.*
+.pio

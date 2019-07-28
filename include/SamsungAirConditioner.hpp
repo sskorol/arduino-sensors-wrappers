@@ -8,7 +8,7 @@
 class SamsungAirConditioner {
   IRSamsungAc *ac; 
 public:
-  SamsungAirConditioner(uint8_t);
+  SamsungAirConditioner(uint8_t pin, bool inverted = false);
   SamsungAirConditioner* turnOn();
   SamsungAirConditioner* turnOff();
   bool isTurnedOn();
