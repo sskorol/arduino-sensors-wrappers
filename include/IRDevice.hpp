@@ -2,9 +2,9 @@
 #define IR_DEVICE_HPP
 
 namespace IRDevice {
-enum Model {
-  SAMSUNG
-};
+    enum Model {
+        SAMSUNG
+    };
 };  // namespace IRDevice
 
 #endif

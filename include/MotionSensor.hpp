@@ -4,9 +4,10 @@
 #include "Sensor.hpp"
 
 class MotionSensor : public Sensor {
- public:
-  MotionSensor(uint8_t);
-  bool isMovementDetected();
+public:
+    explicit MotionSensor(uint8_t);
+
+    bool isMovementDetected();
 };
 
 #endif

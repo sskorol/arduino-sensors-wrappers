@@ -1,22 +1,22 @@
 #include "LED.hpp"
 
 LED::LED(uint8_t pin) : Sensor(pin, OUTPUT) {
-  state = LOW;
+    state = LOW;
 }
 
 void LED::changeState(uint8_t _state) {
-  state = _state;
-  digitalWrite(getPin(), state);
+    state = _state;
+    digitalWrite(getPin(), state);
 }
 
 void LED::turnOn() {
-  changeState(HIGH);
+    changeState(HIGH);
 }
 
 void LED::turnOff() {
-  changeState(LOW);
+    changeState(LOW);
 }
 
 boolean LED::isTurnedOn() {
-  return state == HIGH;
+    return state == HIGH;
 }

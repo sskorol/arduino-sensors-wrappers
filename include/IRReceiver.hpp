@@ -10,14 +10,16 @@
 #define TIMEOUT 15U
 
 class IRReceiver : public Sensor {
-  IRrecv *ir;
-  decode_results results;
-  String decodedData;
+    IRrecv *ir;
+    decode_results results;
+    String decodedData;
 
- public:
-  IRReceiver(uint8_t);
-  std::tuple<uint64_t, String> capture();
-  String getDecodedData() const;
+public:
+    explicit IRReceiver(uint8_t);
+
+    std::tuple<uint64_t, String> capture();
+
+    String getDecodedData() const;
 };
 
 #endif

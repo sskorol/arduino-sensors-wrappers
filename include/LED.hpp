@@ -4,14 +4,18 @@
 #include "Sensor.hpp"
 
 class LED : public Sensor {
-  int state;
+    int state;
 
- public:
-  LED(uint8_t);
-  void changeState(uint8_t);
-  void turnOn();
-  void turnOff();
-  boolean isTurnedOn();
+public:
+    explicit LED(uint8_t);
+
+    void changeState(uint8_t);
+
+    void turnOn();
+
+    void turnOff();
+
+    boolean isTurnedOn();
 };
 
 #endif

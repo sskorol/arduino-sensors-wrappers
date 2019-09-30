@@ -5,11 +5,13 @@
 #include <Bounce2.h>
 
 class ContactSensor : public Sensor {
-  Bounce debouncer;
+    Bounce debouncer;
 public:
-  ContactSensor(uint8_t, uint16_t);
-  int getState();
-  bool isUpdated();
+    ContactSensor(uint8_t, uint16_t);
+
+    int getState();
+
+    bool isUpdated();
 };
 
 #endif

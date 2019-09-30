@@ -3,5 +3,5 @@
 MotionSensor::MotionSensor(uint8_t pin) : Sensor(pin, INPUT) {}
 
 bool MotionSensor::isMovementDetected() {
-  return digitalRead(getPin()) == HIGH;
+    return digitalRead(getPin()) == HIGH;
 }

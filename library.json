@@ -33,7 +33,7 @@
     },
     {
       "name": "BH1750FVI",
-      "version": "1.2.4",
+      "version": "1.2.6",
       "authors": "Enjoyneering",
       "frameworks": "arduino"
     },
@@ -61,7 +61,7 @@
       "frameworks": "arduino"
     }
   ],
-  "version": "0.0.6",
+  "version": "0.0.7",
   "frameworks": "arduino",
-  "platforms": "*"
+  "platforms": "espressif8266"
 }

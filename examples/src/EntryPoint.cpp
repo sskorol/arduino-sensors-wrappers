@@ -10,11 +10,11 @@ Button button = Button(BUTTON_PIN, DEBOUNCING_INTERVAL);
 LED led = LED(LED_PIN);
 
 void setup() {
-  Serial.begin(BAUD_RATE);
+    Serial.begin(BAUD_RATE);
 }
 
 void loop() {
-  if (button.isPressed()) {
-    led.changeState(!led.isTurnedOn());
-  }
+    if (button.isPressed()) {
+        led.changeState(!led.isTurnedOn());
+    }
 }

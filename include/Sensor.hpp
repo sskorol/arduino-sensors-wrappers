@@ -4,14 +4,15 @@
 #include "Arduino.h"
 
 class Sensor {
-  uint8_t pin;
+    uint8_t pin;
 
- public:
-  Sensor(uint8_t pin, uint8_t mode);
-  Sensor(uint8_t pin);
+public:
+    Sensor(uint8_t pin, uint8_t mode);
 
- protected:
-  uint8_t getPin() const;
+    explicit Sensor(uint8_t pin);
+
+protected:
+    uint8_t getPin() const;
 };
 
 #endif

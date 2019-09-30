@@ -6,11 +6,12 @@
 #include "Sensor.hpp"
 
 class IRTransmitter : public Sensor {
-  IRsend *ir;
+    IRsend *ir;
 
- public:
-  IRTransmitter(uint8_t);
-  void send(IRDevice::Model, uint64_t);
+public:
+    explicit IRTransmitter(uint8_t);
+
+    void send(IRDevice::Model, uint64_t);
 };
 
 #endif

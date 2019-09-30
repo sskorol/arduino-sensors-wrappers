@@ -5,8 +5,9 @@
 
 class Button : public ContactSensor {
 public:
-  Button(uint8_t, uint16_t);
-  bool isPressed();
+    Button(uint8_t, uint16_t);
+
+    bool isPressed();
 };
 
 #endif

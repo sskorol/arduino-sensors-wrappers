@@ -5,11 +5,14 @@
 #include "RCSwitch.h"
 
 class RFReceiver : public Sensor {
-  RCSwitch receiver;
-  public:
-    RFReceiver(uint8_t);
+    RCSwitch receiver;
+public:
+    explicit RFReceiver(uint8_t);
+
     unsigned long listen();
+
     void enable();
+
     void disable();
 };
 
